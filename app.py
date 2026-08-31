@@ -9,6 +9,10 @@ from cardio_schedule_data import CARDIO_SCHEDULE
 st.set_page_config(page_title="CHOPS Protocol Planner", page_icon="💪", layout="wide")
 
 st.title("Custom CHOPS Protocol Planner")
+st.link_button(
+    "📖 About & Instructions",
+    "https://github.com/chronicallyill/CHOPS-Automation/blob/main/README.md"
+)
 
 # --- User Inputs ---
 gym_access = st.radio("Do you have gym access?", ["Yes", "No"], horizontal=True)
